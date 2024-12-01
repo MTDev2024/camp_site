@@ -81,6 +81,37 @@ nav ul li a:hover {
     z-index: 999;
 }
 
+.mobile-nav ul {
+    list-style: none;
+    padding: 250px 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-nav ul li a:hover {
+    color: #ff7f50;
+}
+
+.mobile-nav .close-btn {
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+    right: 60px;
+    font-size: 40px;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -88,5 +119,9 @@ nav ul li a:hover {
 
     .navbar nav ul {
         display: none;
+    }
+
+    .logo img {
+        width: 60%;
     }
 }
