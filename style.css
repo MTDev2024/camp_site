@@ -218,6 +218,51 @@ p {
     cursor: pointer;
 } 
 
+.card-container {
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    cursor: pointer;
+    animation: slideUp 1.5s ease-out;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 60%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card h4 {
+    padding: 0 25px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.card p {
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #fff;
+}
 
 @keyframes fadeIn {
     from {
