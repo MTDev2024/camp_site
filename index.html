@@ -55,12 +55,19 @@
                         <option value="Sweden">Sweden</option>
                         <option value="Costa Rica">Costa Rica</option>
                     </select>
-                    <input type="data" id="data" name="check-in / check-out" placeholder="Check-in/Check-out">
+                    <input type="date" id="date" name="check-in / check-out" placeholder="Check-in/Check-out">
                     <input type="text" id="people" name="check-in / check-out" placeholder="Enter # of people">
                     <button class="book-now" onclick="validateForm()">Book Now</button>
                 </div>
             </div>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()"> <i class="ri-close-line"></i> </span>
+                <p>Booking Successfull</p>
+            </div>
+        </div>
+        
         
     </header>
 
